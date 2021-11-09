@@ -1,0 +1,159 @@
+﻿@model IEnumerable<RejestrKontroli1.Models.Rejestr>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Dodaj kontrolę", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Działanie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Poddziałanie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NrProjektu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TytułProjektu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Beneficjent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zespół)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RodzajKontroli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TerminKontroli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataZakończenia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WizytaMonitoringowa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pzp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Konkurencyjnosc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RozeznanieRynku)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataPierwszejInformacji)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ZastrzezeniaDoInf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataOstatecznejInfo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataPodpisaniaInfo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataWpisuDoSL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UchybieniaNIeprawidlowoci)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zalecenia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataWykonaniaZalecen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KontrolaZakonczona)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Działanie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Poddziałanie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NrProjektu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TytułProjektu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Beneficjent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Zespół)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RodzajKontroli)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TerminKontroli)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataZakończenia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WizytaMonitoringowa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pzp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Konkurencyjnosc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RozeznanieRynku)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataPierwszejInformacji)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ZastrzezeniaDoInf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataOstatecznejInfo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataPodpisaniaInfo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataWpisuDoSL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UchybieniaNIeprawidlowoci)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Zalecenia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataWykonaniaZalecen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KontrolaZakonczona)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

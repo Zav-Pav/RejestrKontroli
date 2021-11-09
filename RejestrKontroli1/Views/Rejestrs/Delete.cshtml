@@ -1,0 +1,200 @@
+﻿@model RejestrKontroli1.Models.Rejestr
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Rejestr</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Działanie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Działanie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Poddziałanie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Poddziałanie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NrProjektu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NrProjektu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TytułProjektu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TytułProjektu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Beneficjent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Beneficjent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Zespół)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Zespół)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RodzajKontroli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RodzajKontroli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TerminKontroli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TerminKontroli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataZakończenia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataZakończenia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WizytaMonitoringowa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WizytaMonitoringowa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pzp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pzp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Konkurencyjnosc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Konkurencyjnosc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RozeznanieRynku)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RozeznanieRynku)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataPierwszejInformacji)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataPierwszejInformacji)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ZastrzezeniaDoInf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ZastrzezeniaDoInf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataOstatecznejInfo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataOstatecznejInfo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataPodpisaniaInfo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataPodpisaniaInfo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataWpisuDoSL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataWpisuDoSL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UchybieniaNIeprawidlowoci)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UchybieniaNIeprawidlowoci)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Zalecenia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Zalecenia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataWykonaniaZalecen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataWykonaniaZalecen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KontrolaZakonczona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KontrolaZakonczona)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
